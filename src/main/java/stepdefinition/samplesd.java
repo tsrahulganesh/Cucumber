@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
+
 public class samplesd {
 
     @Given("I am on Login page of billing")
@@ -15,7 +16,9 @@ public class samplesd {
     }
 
     @When("I Enter correct Username and Password on billing")
-    public void iEnterCorrectUsernameAndPasswordOnBilling() {
+    public void iEnterCorrectAndOBilling(String username, String password) {
+        System.out.println("username:+username");
+        System.out.println("password:+password");
         
     }
 
@@ -82,10 +85,7 @@ public class samplesd {
 
 
 
-        @Given("^ I am on Login page of billing$")
-        public void i_am_on_login_page_billing() throws Throwable {
-            System.out.println("login page");
-        }
+
 
         @When("^ I Enter INcorrect Username and Password on billing$")
         public void i_enter_Blank_username_and_password_on_billing() throws Throwable {
@@ -97,10 +97,7 @@ public class samplesd {
             System.out.println("login button");
         }
 
-        @And("^ I Click the Login button of billing page$")
-        public void i_click_the_login_button_billing_page() throws Throwable {
-            System.out.println("login page");
-        }
+
 
 
         @Given("^ I am on Login page of billing$")
@@ -113,10 +110,7 @@ public class samplesd {
             System.out.println("username and pword");
         }
 
-        @Then("^ I should land on dashboard$")
-        public void i_should_land_on_dashboard() throws Throwable {
-            System.out.println("login button");
-        }
+
 
         @And("^ I Click the Login button of billing page$")
         public void i_click_the_login_button_of_billing_page() throws Throwable {
